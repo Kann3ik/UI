@@ -1,0 +1,67 @@
+.Button {
+  border: 0.125rem solid transparent;
+  border-radius: 0.125rem;
+  text-decoration: none;
+  padding: 0.625rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  background: transparent;
+  height: inherit;
+  flex-grow: 1;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  color: inherit;
+  fill: inherit;
+  font-family: inherit;
+}
+
+// variant
+.Primary {
+  background: var(--button-primary-background);
+  color: var(--button-primary-foreground);
+  transition: 0.45s;
+
+  &:hover {
+    transition: 0.45s;
+    background-color: var(--button-primary-hover-background);
+  }
+}
+
+.Secondary {
+  background: var(--button-secondary-background);
+  color: var(--button-secondary-foreground);
+  transition: 0.45s;
+
+  &:hover {
+    transition: 0.45s;
+    background-color: var(--button-secondary-hover-background);
+  }
+}
+
+.Link {
+  transition: 0.45s;
+
+  &:hover {
+    transition: 0.45s;
+    color: var(--button-secondary-hover-background);
+  }
+}
+
+.Text {
+  transition: 0.45s;
+
+  &:hover {
+    color: var(--button-secondary-hover-background);
+    background-color: lightgrey;
+    transition: 0.45s;
+  }
+}
+
+// type
+.button {}
+
+.submit {}
